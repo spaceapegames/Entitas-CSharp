@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -40,6 +40,9 @@
     <Compile Include="Entitas.CodeGeneration.Plugins\Plugins\CodeGenerators\ContextsGenerator.cs" />
     <Compile Include="Entitas.CodeGeneration.Plugins\Plugins\CodeGenerators\EntityGenerator.cs" />
     <Compile Include="Entitas.CodeGeneration.Plugins\Plugins\CodeGenerators\EntityIndexGenerator.cs" />
+    <Compile Include="Entitas.CodeGeneration.Plugins\Plugins\CodeGenerators\SAComponentContextGenerator.cs" />
+    <Compile Include="Entitas.CodeGeneration.Plugins\Plugins\CodeGenerators\SAComponentEntityGenerator.cs" />
+    <Compile Include="Entitas.CodeGeneration.Plugins\Plugins\CodeGenerators\SAComponentEntityInterfaceGenerator.cs" />
     <Compile Include="Entitas.CodeGeneration.Plugins\Plugins\DataProviders\Components\ComponentData.cs" />
     <Compile Include="Entitas.CodeGeneration.Plugins\Plugins\DataProviders\Components\ComponentDataProvider.cs" />
     <Compile Include="Entitas.CodeGeneration.Plugins\Plugins\DataProviders\Components\Providers\ComponentTypeComponentDataProvider.cs" />
@@ -75,12 +78,7 @@
     <Compile Include="Entitas.CodeGeneration.Plugins\Plugins\PostProcessors\UpdateCSProjPostProcessor.cs" />
     <Compile Include="Entitas.CodeGeneration.Plugins\Plugins\CodeGenerators\ComponentEntityInterfaceGenerator.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Entitas.CodeGeneration.Plugins\" />
-    <Folder Include="Entitas.CodeGeneration.Plugins\Plugins\" />
-    <Folder Include="Entitas.CodeGeneration.Plugins\Plugins\Configs\" />
-    <Folder Include="Entitas.CodeGeneration.Plugins\Plugins\Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\Entitas.CodeGeneration\Entitas.CodeGeneration.csproj">
       <Project>{8AA2998C-DEAD-4795-8255-55C2CEC8DED2}</Project>
